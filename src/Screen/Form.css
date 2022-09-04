@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    
+}
+
+.container{
+    display: flex;
+    
+    /* border: 30px solid rgb(50, 73, 189); */
+    margin: 10px 20px 20px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    border-style:groove;
+    border-top: 10px solid  rgb(70, 16, 232);
+    border-left: 10px solid  rgb(70, 16, 232);
+    border-bottom: 10px solid  rgb(70, 16, 232);
+
+    width: 90%;
+    height: 95vh;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    object-fit: cover;
+
+
+    
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 21px;
+    background: rgb(237, 233, 233);
+    width: 35%;
+    height: 85vh;
+    border-radius: 15px;
+    /* border: 2px solid red; */
+   margin-top: 10px;
+
+}
+.fome-area{
+    margin-top: -25px;
+}
+
+.checkbox{
+    margin-left:50px ;
+    
+}
+
+h1 , h4{
+    text-align: center;
+    margin: 8px;
+    
+}
+
+.page{
+    /* background: yellow; */
+    /* height: 70vh; */
+    width: 50%;
+}
+
+
+   
+@media screen and (max-width:600px) {
+    .main{
+  
+        /* display: flex; */
+        width: 100%;
+        height: 150vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        /* margin-left: -50px; */
+        
+        
+    }
+  
+    
+  
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+     border: none;
+     justify-content: center;
+        /* background: red; */
+    }
+  
+   button{
+    margin-left: 18px;
+   }
+  
+   .fome-area {
+    /* width: 50%; */
+    
+  /* border: 2px solid red; */
+  
+  align-items: center;
+  text-align: center;
+  
+    font-size: 12px;
+    flex-wrap: wrap;
+  width: 100%;
+  
+  
+     }
+
+     
+    label{
+  /* border: 2px solid red; */
+  width: 220%;
+  text-align: start;
+  font-size: 15px;
+  
+   }
+  
+   input{
+    width: 100%;
+   }
+   .checkbox{
+    margin-left: 10px;
+    
+   }
+  
+   .checkwrite{
+    margin-left: 10px;
+    
+   }
+  
+   .staticpage{
+    /* display: flex; */
+    /* background: rgb(0, 255, 89); */
+    /* flex: 0 0 30px; */
+    width: 200%;
+    padding: -10px;
+    margin-left: -0px;
+    border: none;
+  
+  }
+  .blue-circle{
+    position: none;
+    display: flex;
+    justify-content: center;
+    margin:0 auto ;
+  }
+  
+  .staticpage{
+    /* display: flex; */
+    flex-direction: column;
+    width: 170%;
+    margin-left: -70px;
+    justify-content: center;
+    align-items: center;
+    align-content:space-between;
+  }
+  .progresses{
+    
+    flex-basis: 300px;
+    width: 200%;
+    font-size: 10px;
+    
+  }
+  .total_hour{
+    margin-left: -40px;
+    width: 100%;
+   
+  }
+  .page{
+    width: 113%;
+  }
+  }
+  
+  @media screen and (min-width:768px) {
+    .main{
+ 
+        /* width: 100%; */
+        height: 85vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 43%;
+        
+        
+        
+    }
+    h1{
+        font-size: 20px;
+        margin-top: -60px;
+    }
+
+    label{
+        /* border: 2px solid red; */
+        width: 220%;
+        /* text-align: center; */
+    }
+    input{
+        width: 100%;
+        margin-left: -10px;
+       }
+       .checkbox{
+        display: none;
+        
+    }
+    .checkwrite{
+        display: none;
+    }
+
+    .fome-area{
+        padding: -20px;
+        
+    }
+
+    .blue-circle{
+        position: none;
+        display: flex;
+        justify-content: center;
+        margin:0 auto ;
+        padding-right: 90px;
+        padding-top: -30px;
+      }
+      
+    
+      .progresses{
+        
+        flex-basis: 320px;
+    
+        font-size: 10px;
+        
+     
+        
+      }
+      .total_hour{
+        margin-left: -40px;
+        width: 100%;
+       
+      }
+}

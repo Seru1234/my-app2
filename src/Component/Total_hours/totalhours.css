@@ -1,0 +1,24 @@
+.total-hours{
+    border: 2px solid rgba(235, 234, 234, 0.912);
+    
+    display: flex;
+   
+    width: 220px;
+    display: flex;
+    
+    margin-left:  40px ;
+    margin-top: -70px;
+    border-radius: 20px;
+ background: hsl(240, 100%, 99%);
+
+    height: 15vh;
+}
+
+.total-hours p{
+    margin: 10px 20px;
+}
+
+.total-hours span{
+    font-weight: bold;
+    font-size: 20px;
+}
