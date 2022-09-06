@@ -1,11 +1,9 @@
-
 import InputArea from "../Component/Input and label/InputArea";
 import "./Form.css";
 import Staticpage from "./Statics_page";
 function Form() {
   return (
     <div className="container">
-      
       <div className="page">
         <Staticpage />
       </div>
@@ -25,17 +23,17 @@ function Form() {
           <InputArea label="Password" placeholder="password " type="password" />
 
           <input className="checkbox" type="checkbox"></input>
-          <label className="checkwrite" style={{ marginLeft: "8px" }} >
+          <label className="checkwrite" style={{ marginLeft: "8px" }}>
             Login by email or phone number
           </label>
 
           <div>
-            <button type="submit">Register</button>
+            <button type="submit" className="btn">
+              Register
+            </button>
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }

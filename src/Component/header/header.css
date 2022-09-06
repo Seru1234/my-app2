@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  padding: 15px 80px 15px 80px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+}
+.header__ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header__ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 35px 0 35px;
+  cursor: pointer;
+}
+.menu__btn {
+  display: none;
+}
+.menu__container {
+  position: relative;
+  transition: 2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color: lightblue;
+    padding: 15px 40px 15px 40px;
+  }
+  .header__ul li {
+    padding: 0 10px 0 10px;
+  }
+  .menu__btn {
+    display: block;
+  }
+  .header__ul {
+    display: none;
+  }
+}

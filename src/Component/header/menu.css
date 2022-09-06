@@ -1,0 +1,23 @@
+.menu {
+  width: 100%;
+  background-color: gray;
+  height: 100vh;
+  /* margin-top: 10px; */
+  display: none;
+  position: fixed;
+  z-index: 50;
+}
+.menu__ul {
+  display: grid;
+  justify-content: center;
+}
+.menu__ul li {
+  list-style-type: none;
+  padding: 30px 0 30px 0;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+}
