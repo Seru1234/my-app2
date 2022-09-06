@@ -1,51 +1,51 @@
 import { Component } from "react";
 
-export interface IProps{
-    initialValue: number;
+export interface IProps {
+  initialValue: number;
 }
 
-export interface IState{
-    count:number;
-};
+export interface IState {
+  count: number;
+}
 
-export class LifecycleMethod extends Component <IProps,IState>{
+export class LifecycleMethod extends Component<IProps, IState> {
+  state: IState = {
+    count: this.props.initialValue,
+  };
 
-    state: IState ={
+  componentDidMount() {
+    console.log("componentdid ammount call");
+    this.setState({ count: this.state.count + 1 });
+  }
 
-        count: this.props.initialValue
-    };
+  shouldComponentUpdate() {
+    console.log("shouldComponentUpdate called");
+    return false;
+  }
 
-    componentDidMount(){
-        console.log("componentdid ammount call");
-        this.setState({count: this.state.count + 1});
-    }
+  onClickButton = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
-    shouldComponentUpdate() {
-        console.log("shouldComponentUpdate called");
-        return false;
-    }
+  componentWillReceiveProps(nextProps: IProps) {
+    console.warn("componentWillReceiveProps called");
+  }
 
-    onClickButton =()=>{
-        this.setState({count:this.state.count +1});
-    }
+  componentDidUpdate(prevProps: IProps, prevState: IState) {
+    console.warn("componentDidUpdate called", prevProps, prevState);
+  }
 
-    componentWillReceiveProps(nextProps: IProps){
-        console.warn("componentWillReceiveProps called");
-    }
-
-    componentDidUpdate(prevProps: IProps, prevState:IState){
-        console.warn("componentDidUpdate called", prevProps, prevState);
-    }
-
-    render(){
-        return(
-            <div>
-                Count with class component: {this.state.count}<br/>
-                <button onClick={this.onClickButton}>Increment value</button>
-            </div>
-        )
-    }
-
+  render() {
+    return (
+      <div>
+        Count with class component: {this.state.count}
+        <br />
+        <button onClick={this.onClickButton} className="btn">
+          Increment value
+        </button>
+      </div>
+    );
+  }
 }
 
 export default LifecycleMethod;
