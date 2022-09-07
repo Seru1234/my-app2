@@ -1,0 +1,15 @@
+nav {
+    background: #fff;
+    padding: 16px 32px;
+}
+
+nav a{
+    margin-right: 16px;
+    text-decoration: none;
+    
+}
+
+nav a.active{
+    /* text-decoration: none; */
+    font-weight: bold;
+}

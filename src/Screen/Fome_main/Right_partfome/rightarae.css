@@ -1,0 +1,553 @@
+body{
+    /* background: red; */
+    background: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cantainer{
+    
+    border-radius: 20px;
+    background: #fff;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+ 
+
+    
+    
+}
+
+
+.left-part{
+    width: 45%;
+    
+    border-top: 40px solid blue;
+    border-left: 40px solid blue;
+    border-bottom: 40px solid blue;
+
+
+    height: 90vh;
+    /* border-radius: 20px; */
+    flex-wrap: wrap;
+    background: rgb(237, 237, 238);
+    
+}
+
+.logo{
+    position: relative;
+    top: 12px;
+    left: 12px;
+}
+
+.blue-cicle{
+    background: blue;
+    height: 45vh;
+    position: relative;
+    top: 30px;
+    /* border: 2px solid red; */
+    border-radius: 200%;
+    width: 75%;
+    left: 10%;
+    flex-wrap: wrap;
+    
+
+}
+
+.frame{
+    background:#fff;
+    width: 100%px;
+    height: 40vh;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    padding: 20px;
+    
+}
+.logos{
+    display: flex;
+    margin:  auto;
+    justify-content: space-between;
+    position: static;
+    
+
+}
+.logo1{
+position:relative;
+left: 20px;
+top: 10px;
+font-weight: bold;
+}
+.logo2{
+    position:relative;
+    right: 20px;
+    top: 10px;
+    color: blue;
+   font-size: 12px;
+    font-weight: bold;
+    }
+    
+
+.progresmain{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    position: static;
+    height: 32vh;
+    
+}
+
+.progress{
+    display: flex;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    height: 31vh;
+    width: 50%;
+    /* position:  fixed; */
+    /* top: 50px; */
+    
+}
+
+.circular{
+    top: 50px;
+    left: 40px;
+}
+.three-btn{
+    display: flex;
+    position: relative;
+    top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 40px;
+
+}
+.static{
+    background: rgb(170, 248, 213);
+    color: green;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px;
+    width: 43px;
+    height: 5vh;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+}
+.relative {
+    background: rgb(182, 188, 227);
+    color:blue ;
+    border-radius: 10px;
+    padding: 7px;
+    position: relative;
+    top: -7px;
+    height: 5vh;
+    font-size: 12px;
+}
+.absulate{
+    background: rgb(234, 181, 215);
+    color:rgb(223, 119, 142) ;
+    border-radius: 10px;
+    padding: 7px;
+    position: relative;
+    top: -7px;
+    height: 5vh;
+    font-size: 12px
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* html,body{
+  display: grid;
+  height: 100%;
+  text-align: center;
+  place-items: center;
+  background: #dde6f0;
+} */
+.circular{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin-left: 15px;
+}
+.circular .inner, .circular .outer, .circular .circle{
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+}
+.circular .inner{
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background-color: #dde6f0;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.circular .circle{
+  z-index: 1;
+  box-shadow: none;
+}
+.circular .numb{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4158d0;
+}
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+.circle .bar .progress, .dot span{
+
+}
+.circle .left .progress{
+  z-index: 1;
+  animation: left 1.5s linear both;
+  background: blue;
+
+}
+@keyframes left {
+  100%{
+    transform: rotate(131deg);
+  /* background: red; */
+
+  }
+}
+.circle .right{
+  z-index: 3;
+  transform: rotate(130deg);
+  /* background: red; */
+
+}
+.circle .right .progress{
+  animation: right 2s linear both;
+  animation-delay: 1.3s;
+}
+@keyframes right {
+  100%{
+    transform: rotate(150deg);
+  background: red;
+
+  }
+}
+.circle .dot{
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 10px;
+  margin-top: -5px;
+  animation: dot 8s linear both;
+  transform-origin: 0% 50%;
+}
+.circle .dot span {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+@keyframes dot{
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+    z-index: 4;
+  }
+  100% {
+    transform: rotate(270deg);
+    z-index: 4;
+  }
+}
+
+
+.framin{
+    /* border: 2px solid red; */
+    width: auto;
+    position: static;
+}
+.frame1{
+    width: 180px;
+    border: 2px solid rgb(233, 233, 239);
+    position: relative;
+    padding: 20px;
+    top: 20px;
+    height: 12vh;
+    border-radius: 20px;
+    background: rgb(252, 252, 252);
+
+    
+}
+.frame1 img{
+position: relative;
+    top: -20px;
+    left: 60px;
+
+}
+.frame1 p{
+    position: relative;
+    top: -10px;
+}
+.frame1 span{
+    position: relative;
+    top: -18px;
+    font-weight: bold;
+}
+
+.frame2{
+    width: 180px;
+    border: 2px solid rgb(236, 236, 242);
+    position: relative;
+    padding: 20px;
+    top: 40px;
+    height: 12vh;
+    border-radius: 20px;
+    background: rgb(252, 252, 252);
+
+    
+}
+.frame2 img{
+    position: relative;
+        top: -20px;
+        left: 60px;
+    
+    }
+    .frame2 p{
+        position: relative;
+        top: -10px;
+    }
+    .frame2 span{
+        position: relative;
+        top: -18px;
+        font-weight: bold;
+    }
+    
+
+   
+    
+/* right part start */
+
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 90vh;
+    border-top: 40px solid rgb(237, 237, 238);
+    border-right: 40px solid rgb(237, 237, 238);
+    border-bottom: 40px solid rgb(237, 237, 238);
+    position: relative;
+    left: -44px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5px;
+    align-items: center;
+}
+.text p{
+    position: relative;
+    top: 10px;
+}
+.mainform{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    background: rgb(237, 237, 238);
+    width: 80%;
+    border-radius: 20px;
+  align-items: center;
+  /* justify-content: center; */
+  left: 60px;
+  /* text-align: start; */
+  height: 70vh;
+  
+  
+
+}
+.fome{
+    position: relative;
+    top: 60px;
+    font-size: 12px;
+}
+.fome input{
+  display: flex;
+  margin: 15px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+
+}
+.fome button{
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    background: #4158d0;
+    top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox input{
+
+    position: relative;
+    left: -150px;
+    top: 30px;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .cantainer{
+           
+    /* border: 5px solid red; */
+   
+    border-radius: 5px;
+    
+    background: #fff;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+
+
+    }
+
+.left-part{
+    width: 98%;
+    /* width: 45%; */
+    position: relative;
+    left: 4px;
+    border-radius: 20px;
+    
+ border: 5px solid #fff;
+
+    height: 90vh;
+    /* border-radius: 20px; */
+    flex-wrap: wrap;
+    background: rgb(237, 237, 238);
+}
+
+.blue-cicle{
+
+    width: 100%;
+    position: relative;
+    left: -1px;
+    top: 10px;
+    height: 60vh;
+}
+
+.frame{
+    width: 100%;
+    position: relative;
+    height: 50vh;
+
+}
+
+.framin{
+    position: relative;
+    left: -30px;
+
+}
+.three-btn{
+    position: relative;
+     top: 70px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     text-align: center;
+     /* justify-content: space-evenly; */
+     /* align-items: center; */
+     
+}
+.three-btn p{
+    margin: 10px;
+    
+}
+.progresmain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.progress{
+
+    position: relative;
+    /* left: -50px; */
+    
+}
+.circular{
+    position: relative;
+    left: -22px;
+}
+
+
+/* right part */
+
+.mainform{
+    /* width: 292px; */
+    width: 95%;
+    height: 80vh;
+
+}
+.right-part{
+    width: 100%;
+    position: relative;
+    left: -50px;
+    border: none;
+    /* height: 80vh; */
+}
+
+
+.checkbox{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+.btn{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+
+    
+}

@@ -1,7 +1,7 @@
 
-import InputArea from "../Component/Input and label/InputArea";
+import InputArea from "../../../Component/Input and label/InputArea";
 import "./Form.css";
-import Staticpage from "./Statics_page";
+import Staticpage from "../Fome_leftpage/Statics_page";
 function Form() {
   return (
     <div className="container">

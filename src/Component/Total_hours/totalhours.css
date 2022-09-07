@@ -12,6 +12,8 @@
  background: hsl(240, 100%, 99%);
 
     height: 15vh;
+    /* border: 2px solid red; */
+    
 }
 
 .total-hours p{
@@ -21,4 +23,25 @@
 .total-hours span{
     font-weight: bold;
     font-size: 20px;
+}
+.per p {
+    display: flex;
+   
+    /* border: 2px solid green; */
+    width: 40%;
+    flex-wrap: wrap;
+    position: relative;
+    right: 190px;
+    top: 55px;
+
+}
+.per span{
+    position: relative;
+    font-size: 12px;
+    left: -90px;
+    display: flex;
+    /* border: 2px solid green; */
+    width: 100px;
+    top: 8px;
+
 }
